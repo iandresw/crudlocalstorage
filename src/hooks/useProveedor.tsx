@@ -36,7 +36,7 @@ const useProveedor=()=>{
             const proveedorArr = saveUpdateProveedores.filter(proveedor => proveedor.id !== parametros.id)
             localStorage.setItem("PROVEEDORES", JSON.stringify(proveedorArr))
             alertaSuccess("Proveedor Eliminado Correctamente")
-            setProveedores(proveedorArr) // ¡Aquí es donde debes actualizar el state!
+            setProveedores(proveedorArr)
             return
         }
         localStorage.setItem("PROVEEDORES", JSON.stringify(saveUpdateProveedores))
